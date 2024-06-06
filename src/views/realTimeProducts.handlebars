@@ -1,0 +1,19 @@
+<h1 class="title">Artículos Gamer</h1>
+
+<h2 class="subtitle">Formulario para agregar productos</h2>
+
+<form class="formProducts">
+    <input type="text" id="title" placeholder="Título" class="controls" required>
+    <input type="text" id="description" placeholder="Descripción" class="controls" required>
+    <input type="number" id="price" placeholder="Precio" class="controls" required>
+    <input type="text" id="thumbnail" value="Imagen de producto" class="controls">
+    <input type="text" id="code" placeholder="Código" class="controls" required>
+    <input type="number" id="stock" placeholder="Stock" class="controls" required>
+    <input type="text" id="category" placeholder="Categoría" class="controls" required><br>
+    <button type="button" id="btnEnviar" class="btn-enviar"> Enviar </button>
+</form>
+
+<div id="contenedorProductos" class="container"></div>
+
+<script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+<script src="js/main.js"></script>

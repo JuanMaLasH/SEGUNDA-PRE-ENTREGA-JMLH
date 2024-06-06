@@ -1,0 +1,16 @@
+<h1 class="title">Artículos Gamer</h1>
+
+<div class="container">
+    {{#each productos}}
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{this.title}}</h5>
+                <div class="card-info">
+                    <p class="card-text"> <strong>Descripción:</strong> {{this.description}} </p>
+                    <p class="card-text"> <strong>Código:</strong> {{this.code}} </p>
+                    <p class="card-text"> <strong>Precio:</strong> ${{this.price}} </p>
+                </div>
+            </div>            
+        </div>
+    {{/each}}
+</div>
